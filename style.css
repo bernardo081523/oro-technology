@@ -1,0 +1,76 @@
+/* --- Variables y Reset --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body {
+    background-color: #080808;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de fibra de carbono */
+    color: white;
+}
+
+.gold { color: #D4AF37; }
+.blue { color: #007BFF; }
+
+/* --- Navegación --- */
+header { padding: 25px; text-align: center; border-bottom: 1px solid #222; background: rgba(0,0,0,0.5); }
+.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+
+/* --- Perfil (Estilo Tarjeta) --- */
+.profile { padding: 80px 20px; text-align: center; border-bottom: 5px solid #007BFF; /* Línea azul neón */ }
+.profile h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.subtitle { font-size: 1.5rem; color: #888; margin-bottom: 30px; }
+.contact-strip span { margin: 0 15px; color: #D4AF37; font-weight: 500; display: inline-block; }
+
+/* --- Secciones Comunes --- */
+section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+h2 { text-align: center; color: #D4AF37; margin-bottom: 50px; font-size: 2.2rem; }
+
+/* --- Beneficios --- */
+.benefits-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.benefit-item { flex: 1; min-width: 250px; text-align: center; background: #111; padding: 30px; border-radius: 15px; border: 1px solid #222; }
+.benefit-item i { font-size: 2.5rem; margin-bottom: 20px; }
+
+/* --- Servicios --- */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { background: #151515; padding: 40px; border-radius: 15px; text-align: center; border: 1px solid #333; transition: 0.4s; }
+.card:hover { border-color: #007BFF; transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,123,255,0.2); }
+.card i { font-size: 3rem; color: #007BFF; margin-bottom: 15px; }
+
+/* --- Portfolio (TUS IMÁGENES) --- */
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.work-item { 
+    height: 350px; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 15px; 
+    position: relative; 
+    overflow: hidden; 
+    border: 1px solid #333; 
+    display: flex; 
+    align-items: flex-end; 
+}
+
+/* Enlaza tus fotos aquí */
+.work-item-cctv { background-image: url('cctv.jpg'); }
+.work-item-redes { background-image: url('redes.jpg'); }
+.work-item-capacitacion { background-image: url('capacitacion.jpg'); }
+
+.work-info { background: rgba(0,0,0,0.85); width: 100%; padding: 20px; border-top: 2px solid #007BFF; }
+
+/* --- Testimonios --- */
+.t-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.t-card { background: rgba(255,255,255,0.03); padding: 30px; border-left: 4px solid #D4AF37; border-radius: 5px; font-style: italic; }
+
+/* --- WhatsApp CTA --- */
+.cta-box { background: #111; padding: 50px; border-radius: 20px; border: 1px dashed #D4AF37; text-align: center; }
+.btn-whatsapp { background: #25D366; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; display: inline-block; margin-top: 25px; transition: 0.3s; }
+.btn-whatsapp:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); }
+
+footer { text-align: center; padding: 40px; color: #444; border-top: 1px solid #1a1a1a; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile h1 { font-size: 2.5rem; }
+    .contact-strip span { display: block; margin: 10px 0; }
+}
