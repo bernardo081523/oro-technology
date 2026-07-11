@@ -3,9 +3,9 @@
 
 body {
     background-color: #080808;
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-        url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de fibra de carbono */
+    background-image: url('circuit-bg.svg'); /* Patrón de circuito azul, estilo tarjeta de presentación */
+    background-repeat: repeat;
+    background-size: 300px 300px;
     color: white;
 }
 
