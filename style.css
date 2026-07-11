@@ -37,6 +37,18 @@ h2 { text-align: center; color: #D4AF37; margin-bottom: 50px; font-size: 2.2rem;
 .card:hover { border-color: #007BFF; transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,123,255,0.2); }
 .card i { font-size: 3rem; color: #007BFF; margin-bottom: 15px; }
 
+/* --- Sistemas Web / SaaS --- */
+.section-lead { text-align: center; color: #999; max-width: 700px; margin: -30px auto 40px; font-size: 1.05rem; }
+.software-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.sw-card { background: #111; border: 1px solid #222; border-radius: 15px; padding: 30px; display: flex; flex-direction: column; transition: 0.3s; }
+.sw-card:hover { border-color: #D4AF37; transform: translateY(-6px); }
+.sw-tag { display: inline-block; background: rgba(212,175,55,0.12); color: #D4AF37; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; padding: 4px 12px; border-radius: 20px; margin-bottom: 15px; width: fit-content; text-transform: uppercase; }
+.sw-card h3 { margin-bottom: 10px; font-size: 1.3rem; }
+.sw-card p { color: #ccc; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; margin-bottom: 15px; }
+.sw-card a { color: #007BFF; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+.sw-card a:hover { text-decoration: underline; }
+.sw-status { color: #666; font-size: 0.85rem; font-style: italic; }
+
 /* --- Portfolio (TUS IMÁGENES) --- */
 .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .work-item { 
